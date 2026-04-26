@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LFE1HWSRXK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LFE1HWSRXK');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pro Password Generator | Secure & Random Password Creator</title>
+    <meta name="title" content="Pro Password Generator | Best Secure & Random Password Creator 2026">
+    <meta name="description" content="Generate ultra-secure, unbreakable random passwords with Pro Password Generator. 100% private, browser-based, and offline-ready. Protect your accounts globally with the #1 security tool.">
+    <meta name="keywords" content="password generator, strong password creator, secure random password, rafid ahammed, unbreakable password tool, online security tools 2026, best password generator, globally accessible security tool">
+    <meta name="author" content="Rafid Ahammed">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="revisit-after" content="1 days">
+    <meta name="language" content="English">
+    <meta name="distribution" content="global">
+    <meta name="geo.region" content="BD" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roirio522-hue.github.io/Pro-Password-Gen/">
+    <meta property="og:title" content="Pro Password Generator - Secure Your Digital Life">
+    <meta property="og:description" content="The world's most secure and private password generator. Generate random strings instantly without data storage.">
+    <meta property="og:image" content="https://roirio522-hue.github.io/Pro-Password-Gen/og-image.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Pro Password Generator - Unbreakable Security">
+    <meta property="twitter:description" content="Advanced algorithmic password generation for maximum security. Fast, free, and private.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Pro Password Generator",
+      "url": "https://roirio522-hue.github.io/Pro-Password-Gen/",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "All",
+      "description": "A high-end professional password generation tool that works entirely in-browser for 100% user privacy.",
+      "author": {
+        "@type": "Person",
+        "name": "Rafid Ahammed"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #f8fafc; color: #1e293b; font-family: 'Inter', sans-serif; }
+        .main-card { background: white; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
+        .input-field { background-color: #ffffff; border: 1px solid #cbd5e1; color: #1e293b; border-radius: 0.75rem; padding: 1rem; }
+        .display-area { border: 2px dashed #3b82f6; background-color: #f1f5f9; border-radius: 1.5rem; word-break: break-all; min-height: 80px; display: flex; align-items: center; justify-content: center; position: relative; }
+        .feature-box { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 1.5rem; padding: 1.5rem; }
+        .feature-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; color: #64748b; text-transform: uppercase; }
+        .strength-meter { height: 6px; border-radius: 3px; background: #e2e8f0; margin-top: 10px; width: 100%; transition: all 0.3s; }
+        input[type=range] { width: 100%; height: 6px; background: #e2e8f0; border-radius: 5px; outline: none; appearance: none; }
+        input[type=range]::-webkit-slider-thumb { appearance: none; width: 18px; height: 18px; background: #3b82f6; border-radius: 50%; cursor: pointer; }
+        .seo-section h2 { color: #3b82f6; font-weight: 800; font-size: 1.25rem; margin-bottom: 1rem; font-style: italic; }
+        .seo-section p { color: #64748b; font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.5rem; }
+
+        /* Custom Toast Notification */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #1e293b;
+            color: #fff;
+            text-align: center;
+            border-radius: 12px;
+            padding: 14px;
+            position: fixed;
+            z-index: 100;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        #toast.show {
+            visibility: visible;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+        @keyframes fadein { from { bottom: 0; opacity: 0; } to { bottom: 30px; opacity: 1; } }
+        @keyframes fadeout { from { bottom: 30px; opacity: 1; } to { bottom: 0; opacity: 0; } }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-6 text-center">
+
+    <div class="main-card w-full max-w-xl p-8 rounded-[2.5rem] my-10">
+        <h1 class="text-3xl font-black text-slate-800 italic uppercase">Pro Password Gen</h1>
+        <p class="text-slate-400 text-[10px] tracking-widest uppercase mt-1 mb-6">Secure & Unbreakable Passwords</p>
+
+        <div class="display-area p-6 mb-6">
+            <span id="passwordOutput" class="text-2xl font-mono font-bold text-blue-600">......</span>
+            <button onclick="copyToClipboard()" class="absolute top-2 right-4 text-slate-500 hover:text-blue-700 bg-white/50 hover:bg-white p-2 rounded-lg transition-all shadow-sm border border-slate-200">
+                <i class="far fa-copy text-xl"></i>
+            </button>
+        </div>
+
+        <div class="mb-6 text-center">
+            <div id="strengthMeter" class="strength-meter mx-auto"></div>
+            <p id="strengthText" class="text-[10px] font-bold uppercase mt-2 text-slate-400">Strength: Weak</p>
+        </div>
+
+        <div class="text-left mb-6">
+            <label class="text-[10px] font-bold text-slate-400 uppercase ml-1">Length: <span id="lenVal" class="text-blue-600">12</span></label>
+            <input type="range" id="lengthInput" min="6" max="32" value="12" class="mt-2 mb-6" oninput="document.getElementById('lenVal').innerText = this.value">
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center gap-3 input-field">
+                    <input type="checkbox" id="upperCase" class="w-5 h-5 accent-blue-600" checked>
+                    <label class="text-xs font-bold uppercase">Uppercase</label>
+                </div>
+                <div class="flex items-center gap-3 input-field">
+                    <input type="checkbox" id="lowerCase" class="w-5 h-5 accent-blue-600" checked>
+                    <label class="text-xs font-bold uppercase">Lowercase</label>
+                </div>
+                <div class="flex items-center gap-3 input-field">
+                    <input type="checkbox" id="numbers" class="w-5 h-5 accent-blue-600" checked>
+                    <label class="text-xs font-bold uppercase">Numbers</label>
+                </div>
+                <div class="flex items-center gap-3 input-field">
+                    <input type="checkbox" id="symbols" class="w-5 h-5 accent-blue-600" checked>
+                    <label class="text-xs font-bold uppercase">Symbols</label>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="generatePassword()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-4 rounded-xl shadow-lg transition-all active:scale-95 uppercase mb-8">
+            Generate Password
+        </button>
+
+        <div class="feature-box mb-4">
+            <h2 class="text-sm font-bold mb-4 text-slate-800 italic uppercase">Advanced Security Features</h2>
+            <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-left">
+                <div class="feature-item">🔒 <span>End-to-End Private</span></div>
+                <div class="feature-item">🛡️ <span>Strong Encryption</span></div>
+                <div class="feature-item">♾️ <span>Unlimited Generation</span></div>
+                <div class="feature-item">🚀 <span>Instant Copy</span></div>
+                <div class="feature-item">✅ <span>Customizable</span></div>
+                <div class="feature-item">📱 <span>Mobile Ready</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full max-w-xl seo-section bg-white p-8 rounded-[2.5rem] border border-slate-200 shadow-sm mb-6 text-left">
+        <h2>Professional Password Security Tool</h2>
+        <p>Welcome to <strong>Pro Password Generator</strong>, the ultimate tool for creating unhackable passwords. Security starts with a strong, random character string.</p>
+        
+        <h2>Why Privacy Matters?</h2>
+        <p>Unlike other online tools, this <strong>Random Password Creator</strong> works entirely in your browser. No data is stored or sent to any server, keeping your credentials 100% private.</p>
+    </div>
+
+    <div id="toast">
+        <i class="fas fa-check-circle text-green-400"></i>
+        <span>Password Copied Successfully!</span>
+    </div>
+
+    <footer class="text-slate-400 text-[9px] uppercase tracking-widest mb-10 font-bold">
+        <div>&copy; 2026 Pro Password Generator | All Rights Reserved</div>
+        <div class="mt-2 text-[8px] text-slate-300">Created by Rafid Ahammed</div>
+    </footer>
+
+    <script>
+        const output = document.getElementById('passwordOutput');
+        const strengthMeter = document.getElementById('strengthMeter');
+        const strengthText = document.getElementById('strengthText');
+        const toast = document.getElementById('toast');
+
+        function generatePassword() {
+            const length = document.getElementById('lengthInput').value;
+            const hasUpper = document.getElementById('upperCase').checked;
+            const hasLower = document.getElementById('lowerCase').checked;
+            const hasNumber = document.getElementById('numbers').checked;
+            const hasSymbol = document.getElementById('symbols').checked;
+
+            const charset = {
+                upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                lower: "abcdefghijklmnopqrstuvwxyz",
+                number: "0123456789",
+                symbol: "!@#$%^&*()_+~`|}{[]:;?><,./-="
+            };
+
+            let availableChars = "";
+            if (hasUpper) availableChars += charset.upper;
+            if (hasLower) availableChars += charset.lower;
+            if (hasNumber) availableChars += charset.number;
+            if (hasSymbol) availableChars += charset.symbol;
+
+            if (availableChars === "") return;
+
+            let password = "";
+            for (let i = 0; i < length; i++) {
+                password += availableChars.charAt(Math.floor(Math.random() * availableChars.length));
+            }
+
+            output.innerText = password;
+            updateStrength(password, length);
+        }
+
+        function updateStrength(pwd, len) {
+            let strength = 0;
+            if (len >= 12) strength++;
+            if (/[A-Z]/.test(pwd)) strength++;
+            if (/[0-9]/.test(pwd)) strength++;
+            if (/[^A-Za-z0-9]/.test(pwd)) strength++;
+
+            if (strength <= 1) {
+                strengthMeter.style.width = '30%';
+                strengthMeter.style.backgroundColor = '#ef4444';
+                strengthText.innerText = "Strength: Weak";
+                strengthText.style.color = '#ef4444';
+            } else if (strength <= 3) {
+                strengthMeter.style.width = '60%';
+                strengthMeter.style.backgroundColor = '#f59e0b';
+                strengthText.innerText = "Strength: Medium";
+                strengthText.style.color = '#f59e0b';
+            } else {
+                strengthMeter.style.width = '100%';
+                strengthMeter.style.backgroundColor = '#10b981';
+                strengthText.innerText = "Strength: Very Strong";
+                strengthText.style.color = '#10b981';
+            }
+        }
+
+        function copyToClipboard() {
+            const text = output.innerText;
+            if(text === "......") return;
+            navigator.clipboard.writeText(text).then(() => {
+                toast.className = "show";
+                setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+            });
+        }
+
+        window.onload = generatePassword;
+    </script>
+</body>
+</html>
